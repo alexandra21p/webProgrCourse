@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--<script src="Script.js"></script>-->
+    <title></title>
+    <style>
+        body, p {
+            font-family: "Century Gothic", sans-serif;
+            color: midnightblue;
+        }
+        h1, h2, h3 {
+            font-family: "Century Gothic", sans-serif;
+            margin-top: 30px;
+            text-align: center;
+            color: midnightblue;
+        }
+        #form1 {
+
+            width: 50%;
+            margin-top: 100px;
+            margin-left: 460px;
+        }
+        
+        #form2 {
+            width: 50%;
+            margin-top: 120px;
+            margin-left: 460px;
+            margin-bottom: 50px;
+        }
+
+        fieldset {
+            width:  50%;
+            margin-top: 50px;
+
+        }
+        input, legend {
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+        legend {
+            font-family: "Futura PT", sans-serif;
+            text-transform: uppercase;
+            font-style: oblique;
+        }
+
+        input[type=submit] {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h2>WELCOME! You need to authenticate first</h2>
+<div id="form1">
+    <form method="POST" action="getCourses.php" id="studForm">
+        <fieldset>
+            <legend>STUDENT LOGIN</legend>
+        Username: <input id="username" type="text" name="username">
+        <br />
+        Password: <input id="password" type="text" name="password" />
+        <input type="submit" class="submitStud" value="Login"/>
+        </fieldset>
+    </form>
+</div>
+ 
+<div id="form2">
+    <form method="POST" action="teacherMenu.php" id="profForm">
+        <fieldset>
+            <legend>PROFESSOR LOGIN</legend>
+        Username: <input id="username" type="text" name="username">
+        <br />
+        Password: <input id="username" type="text" name="password" />
+        <input type="submit" class="submitProf" value="Login"/>
+        </fieldset>
+    </form>
+</div>
+     <div id="txtHint"></div>
+
+</body>
+</html>
