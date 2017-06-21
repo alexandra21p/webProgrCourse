@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: "Century Gothic", 'consolas', serif;
+            font-size: 13px;
+            color: #4B0082;
+        }
+        #button {
+            background-color: teal;
+            width: 150px;
+            color: white;
+            margin-left:97px;
+            margin-top: 30px;
+            padding: 5px 20px;
+            border-radius: 2px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        #dialogbox {
+            display: none;
+            width: 200px;
+            height: 200px;
+            left:100px;
+            top: 72px;
+            border: 1px solid teal;
+            position:absolute;
+        }
+        #topbar {
+            display: inherit;
+            width: 100%;
+            background-color: #D3D3D3;
+            position: inherit
+        }
+
+        #x {
+            position: relative;
+            top: inherit;
+            right: inherit;
+            cursor:pointer;
+        }
+
+        .resizable{
+            overflow: hidden;
+            resize: both;
+        }
+
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $('#button').click(function() {
+                $('#dialogbox').css('display', 'block');
+            });
+
+            $("#x").click(function(){
+                $('#dialogbox').hide('fast');
+            });
+        });
+
+
+    </script>
+
+
+</head>
+<body>
+
+<div>
+
+    <div id="button">click me</div>
+    <div id="dialogbox" class="resizable">
+        <div id="topbar">
+            <input id="x" type="button" value="X" style="float:right"/>
+            This is a resizable box.
+        </div>
+        <p> <br> It contains some simple text and that's pretty much it, I guess. Click on the X button to close it.</p>
+
+    </div>
+</div>
+
+</body>
+</html>

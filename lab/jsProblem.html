@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #mydiv{
+            width:100%;
+            position: absolute;
+            bottom:0;
+        }
+
+        /*
+        img{
+            position: relative;
+            display: block;
+            float: left;
+        }
+        */
+    </style>
+    <script>
+        function count()
+        {
+            var even = [];
+            var odd = [];
+            var imgs = document.getElementsByTagName('img');
+            for (var i = 0; i < imgs.length; i++) {
+                if (i % 2 == 0) {
+                    even.push(imgs[i]);
+                }
+                odd.push(imgs[i]);
+            }
+            for (var j = 0; j < odd.length; j++) {
+                /*
+                odd[j].style.position="fixed";
+                odd[j].style.display="block";
+                odd[j].style.top="0";
+                */
+            }
+
+            for (var k = 0; k < even.length; k++) {
+                even[k].style.position="absolute";
+                even[k].style.bottom="0";
+                even[k].style.maxHeight="90%";
+                even[k].style.left="20%";
+                even[k].style.webkitTransform= "translateX(-50%)";
+/*
+                even[k].style.position="fixed";
+                even[k].style.display="block";
+                even[k].style.bottom="0";
+*/
+            }
+
+            document.getElementById("demo").innerHTML = "Total number of images: " + imgs.length;
+            //document.getElementById("div1").innerHTML = "Letters at EVEN positions: " + even;
+            //document.getElementById("div2").innerHTML = "Letters at ODD positions: " + odd;
+        }
+
+    </script>
+
+</head>
+<body>
+
+<img src="mypic.png" style="width:150px; height:150px">
+<img src="pic03.jpg" style="width:150px; height:150px">
+<img src="pic07.jpg" style="width:150px; height:150px">
+<img src="pic03.jpg" style="width:150px; height:150px">
+<img src="mypic.png" style="width:150px; height:150px">
+
+<button type="button" onclick="count()">Count images</button>
+<div id="demo"></div>
+
+</body>
+</html>

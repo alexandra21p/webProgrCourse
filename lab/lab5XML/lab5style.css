@@ -1,0 +1,64 @@
+body {
+    font-family: "Century Gothic",'consolas',serif;
+    font-size: 13px;
+    color:#008B8B;
+    background-color: #EEEEEE;
+}
+
+h1, h2, h3 {
+    font-family: "Berlin Sans FB", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    color: #800080;
+    text-align:left;
+
+}
+
+.title {
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+    color:black;
+    padding:5px 30px;
+    margin:10px 25px;
+}
+
+
+.category {
+    padding-top: 40px;
+    margin-left: 65px;
+}
+
+.author {
+    padding-top: 5px;
+    margin-left: 65px;
+}
+
+.publishing_year {
+    padding-bottom:40px;
+    font-size: 15px;
+    color:rebeccapurple;
+    margin-left: 600px;
+    margin-top:-20px;
+
+}
+
+.selected {
+    padding-bottom:-15px;
+    background-color:teal;
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    z-index:0;
+}
+.separated, .separated:before{
+    content:"";
+    height:1px;
+    background:-moz-linear-gradient(left, #EEEEEE 0%,#000000 50%,#EEEEEE 100%);
+    background:-webkit-linear-gradient(left, #EEEEEE 0%,#000000 50%,#EEEEEE 100%);
+    background:linear-gradient(left, #EEEEEE 0%,#000000 50%,#EEEEEE 100%);
+    width:100%;
+    display:block;
+}

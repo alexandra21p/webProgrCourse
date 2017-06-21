@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeDiv() {
+            var even = [];
+            var odd = [];
+            var str = "";
+            var elems = document.getElementsByTagName("div");
+            for (var i  = 0; i < elems.length; i++) {
+                if (i % 2 == 0) {
+                    even.push(elems[i]);
+                }
+                else  { odd.push(elems[i]); }
+
+            }
+            for (var j = 0; j < even.length; j++) {
+                even[j].style.color='#FFFF00';
+            }
+            for (var k = 0; k < odd.length; k++) {
+                odd[k].style.color='#90EE90';
+            }
+
+            var res = "";
+            var text = document.getElementsByTagName("p");
+            for (var x = 0; x < text.length; x++) {
+                str =  text[x].innerHTML;
+                res += str;
+                console.log(str);
+                //res.concat(str);
+
+            }
+            document.getElementById("demo").innerHTML = "Concatenated text: " + res;
+            console.log(res);
+        }
+
+
+    </script>
+</head>
+<body>
+
+<div>
+    <p>even text</p>
+</div>
+
+<div>
+    <p>odd text </p>
+</div>
+
+<div>
+    <p>another even text<p/>
+</div>
+
+<button type="button" onclick="changeDiv()">Click me!</button>
+
+<div id="demo"></div>
+</body>
+</html>

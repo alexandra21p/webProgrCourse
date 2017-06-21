@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+
+    <style type="text/css">
+        body {
+            font-family: 'consolas',serif;
+            font-size: 13px;
+            color: #008080;
+            background-image:url('backgr2.png');
+            background-attachment:fixed;
+            background-repeat:repeat;
+        }
+
+        h1, h2, h3 {
+            border-radius: 10px;
+            margin: 180px 280px 50px 380px;
+            padding: 10px 5px 10px;
+            background-color: #FFDEAD;
+            border: 1px solid #DEB887;
+            text-align: center;
+            text-shadow: 1px 1px 5px #696969;
+
+        }
+
+        #topbar {
+            opacity: .9;
+            position: fixed;
+            width: 100%;
+            height: 54px;
+            left: 0;
+            top: 0;
+            background: #F5F5F5;
+            border-bottom: 1px solid #708090;
+            z-index: 999;
+        }
+
+        #title {
+            width: 497px;
+            font-family: Consolas, 'consolas', serif;
+            font-size: 15px;
+            text-transform: uppercase;
+            margin: 20px auto;
+            text-align: center;
+            z-index: 999;
+        }
+
+        #sline {
+            position: fixed;
+            width: 1px;
+            height: 100%;
+            margin-left: 230px;
+            top: 0;
+            background: #708090;
+            z-index: 999;
+        }
+
+        .desc {
+            position: fixed;
+            width: 105px;
+            margin-top: 10px;
+            margin-left: 55px;
+            padding: 10px 0;
+            text-align: right !important;
+            letter-spacing: 0px !important;
+            line-height: 12px;
+            background: transparent;
+            z-index: 1;
+        }
+
+        .desc a, .desc a:visited { font-weight: bold; text-decoration:none; }
+        .desc a:hover { text-decoration:line-through; }
+
+        .sideimage { width: 105px; text-align: right; }
+        .sideimage img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 8px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            z-index: 99;
+        }
+
+        .sidethingy {
+            position: fixed;
+            height: 220px;
+            width: 150px;
+            margin-bottom: 8px;
+            margin-left: 40px;
+            padding: 10px;
+            box-shadow: 1px 1px 0 #444,
+            2px 2px 0 #444, /* end of 2 level deep grey shadow */
+            3px 3px 0 #444,
+            4px 4px 0 #444,
+            5px 5px 0 #444,
+            6px 6px 0 #444; /* end of 4 level deep dark shadow */
+            /*10px 10px 3px grey;*/
+            -webkit-perspective: 150px; /* Chrome, Safari, Opera */
+            perspective: 150px;
+            transform: rotateY(45deg);
+        }
+
+        .transbox {
+            border-radius: 25px;
+            margin: 180px 280px 180px 380px;
+            padding: 40px 50px 50px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+            -webkit-transition: 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+
+        .transbox:hover {
+            border-radius: 0px;
+            background-color: #D3D3D3;
+            border: 1px solid black;
+            -webkit-transition: 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+        }
+
+        .transbox p {
+            margin: 1%;
+            font-weight: bold;
+            text-align: justify;
+            /*color: #000000; */
+        }
+
+
+
+        #div1 {
+            position: absolute;
+            padding: 15px 25px;
+            margin: -40px 5px;
+            height: 1px;
+            width: 300px;
+            background-color: #696969;
+            -webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera  */
+            transform: rotateX(45deg);
+
+        }
+
+        #div2 {
+            position: relative;
+            padding: 16px;
+            height: 1px;
+            width: 360px;
+            margin: 15px 480px 80px;
+            /*border: 1px solid black;*/
+            background-color: #A9A9A9;
+            -webkit-perspective: 100px;
+            perspective: 100px;
+            /*-webkit-transform: rotateY(45deg); /* Chrome, Safari, Opera
+            transform: rotateY(45deg);*/
+        }
+
+
+        #div3 {
+            position: absolute;
+            padding: 17px 26px;
+            margin: -40px 8px;
+            height: 1px;
+            width: 218px;
+            background-color: #696969;
+            -webkit-transform: rotateX(48deg); /* Chrome, Safari, Opera  */
+            transform: rotateX(48deg);
+
+        }
+
+        #div4 {
+            position: relative;
+            padding: 14px;
+            height: 5px;
+            width: 286px;
+            margin: 15px 519px 1px;
+            background-color: #A9A9A9;
+            -webkit-perspective: 90px;
+            perspective: 90px;
+            /*-webkit-transform: rotateY(45deg); /* Chrome, Safari, Opera
+            transform: rotateY(45deg);*/
+        }
+
+
+        #div5 {
+            position: absolute;
+            padding: 20px 19px;
+            margin: -40px 34px;
+            height: 1px;
+            width: 100px;
+            background-color: #696969;
+            -webkit-transform: rotateX(55deg); /* Chrome, Safari, Opera  */
+            transform: rotateX(55deg);
+
+        }
+
+        #div6 {
+            position: relative;
+            padding: 14px;
+            height: 1px;
+            width: 206px;
+            margin: 10px 558px 10px;
+            background-color: #A9A9A9;
+            -webkit-perspective: 40px;
+            perspective: 40px;
+            /*-webkit-transform: rotateY(45deg); /* Chrome, Safari, Opera
+            transform: rotateY(45deg);*/
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="topbar"><div id="title">A YOUNG UNDERSTANDING</div></div>
+<div id="sline"></div>
+
+<div class="desc">
+
+
+    <div class="sideimage"><img src="sideimg.png" width="100" height="100" class="image"/></div>
+    <p>A simple description.</p>
+
+
+</div>
+<div class="sidethingy"></div>
+<div class="transbox"><p>This is some text that is placed in the transparent box.</p>
+</div>
+
+<h2>this figure represents a set of stairs in 3D. </h2>
+<div id="div6">
+    <div id="div5"></div>
+</div>
+<div id="div4">
+    <div id="div3"></div>
+</div>
+<div id="div2">
+    <div id="div1"></div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function count()
+        {
+            var even = "";
+            var odd = "";
+            var chars = document.getElementsByTagName('body')[0].innerHTML.replace(/[\n\r]/g, ' ').replace(/<.*?>/g, '');
+            chars = chars.replace(/\s/g, '').replace(/[^a-zA-Z]/g,'');
+            for (var i = 0; i < chars.length; i++) {
+                if (i % 2 == 0) {
+                    even += chars.charAt(i);
+                }
+                else odd += chars.charAt(i);
+            }
+            document.getElementById("demo").innerHTML = "Total number of letters: " + chars.length;
+            document.getElementById("div1").innerHTML = "Letters at EVEN positions: " + even;
+            document.getElementById("div2").innerHTML = "Letters at ODD positions: " + odd;
+        }
+
+    </script>
+</head>
+<body>
+
+<p>This is some random top paragraph.</p>
+<div id="bla">
+    In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.
+    Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+    Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
+</div>
+
+<table border="2" style="width:30%">
+    <tr>
+        <th rowspan="6">LYRICS</th>
+        <th>Song</th>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>Year</th>
+    </tr>
+
+    <tr>
+        <td>I Can't Win</td>
+        <td>The Strokes</td>
+        <td>Room On Fire</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>Cornerstone</td>
+        <td>Arctic Monkeys</td>
+        <td>Humbug</td>
+        <td>2009</td>
+    </tr>
+    <tr>
+        <td>The Less I Know The Better</td>
+        <td>Tame Impala</td>
+        <td>Currents</td>
+        <td>2015</td>
+    </tr>
+    <tr>
+        <td>Ties</td>
+        <td>Years & Years</td>
+        <td>Communion</td>
+        <td>2015</td>
+    </tr>
+</table>
+<a href="http://genius.com/Years-and-years-ties-lyrics"> click here to see full lyrics >></a>
+<p>Final paragraph.</p>
+<button type="button" onclick="count()">Find letter count</button>
+<div id="demo">Total number of letters will be displayed here.</div>
+<div id="div1"></div>
+<div id="div2"></div>
+
+</body>
+</html>

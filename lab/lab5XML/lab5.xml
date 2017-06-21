@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="lab5.xsl"?>
+
+<bibliography>
+    <entry category="article">
+        <title>Learn JavaScript</title>
+        <author>Jessica Jones</author>
+        <topic>web programming</topic>
+        <publishing_year>2013</publishing_year>
+    </entry>
+
+    <entry category="book report">
+        <title>The Catcher in the Rye - a book report</title>
+        <author>Michael Scott</author>
+        <topic>literature</topic>
+        <publishing_year>2012</publishing_year>
+    </entry>
+
+    <entry category="presentation">
+        <title>Intro to Perl</title>
+        <author>Eric Smith</author>
+        <topic>programming</topic>
+        <publishing_year>2011</publishing_year>
+    </entry>
+
+    <entry category="web link">
+        <title>How To Set Up Google Chromecast - Step by Step -</title>
+        <author>Tom's Guide</author>
+        <topic>streaming</topic>
+        <publishing_year>2010</publishing_year>
+    </entry>
+
+    <entry category="software package">
+        <title>Visual Studio Tools for Office</title>
+        <author>Microsoft</author>
+        <topic>computing</topic>
+        <publishing_year>2009</publishing_year>
+    </entry>
+
+    <entry category="article">
+        <title>Photo To Detailed Sketch With Photoshop</title>
+        <author>Sam Granger</author>
+        <topic>photo editing</topic>
+        <publishing_year>2011</publishing_year>
+    </entry>
+
+    <entry category="book report">
+        <title>Lord of The Flies - a book report</title>
+        <author>Carl Grimes</author>
+        <topic>literature</topic>
+        <publishing_year>2014</publishing_year>
+    </entry>
+
+</bibliography>
